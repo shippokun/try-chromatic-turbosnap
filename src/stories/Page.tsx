@@ -40,7 +40,7 @@ export const Page: React.VFC = () => {
           </li>
           <li>
             Assemble data in the page component from your services. You can mock these services out
-            using Storybook.
+            using Chromatic.
           </li>
         </ul>
         <p>
