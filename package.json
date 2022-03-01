@@ -8,14 +8,35 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@webpack-cli/generators": "^2.4.2",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "prettier": "^2.5.1",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.6.2",
-    "webpack": "^5.69.1"
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "My webpack project"
 }
